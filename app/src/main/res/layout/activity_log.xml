@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mila"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/sans"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:text="Fuel Log"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/txip"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/td"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sans"
+                android:hint="Meter Reading">
+
+            </EditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <EditText
+                android:id="@+id/tcc"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sans"
+                android:hint="Total Cost"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <EditText
+                android:id="@+id/fq"
+                android:fontFamily="@font/sans"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Fuel Quantity"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/cal"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:fontFamily="@font/sans"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:layout_height="55dp"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="32dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sans"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18dp"
+                android:textColor="#fff"
+                android:text="Mileage:"
+                ></TextView>
+
+            <TextView
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/milag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sans"
+                android:textSize="18dp"
+                android:textColor="#fff"
+                ></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sans"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18dp"
+                android:textColor="#fff"
+                android:text="Fuel Rate:"
+                ></TextView>
+
+            <TextView
+                android:layout_marginLeft="60dp"
+                android:id="@+id/fp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/sans"
+                android:textSize="18dp"
+                android:textColor="#fff"
+                ></TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sans"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#fff"
+                android:text="Cost Per Kilomter:"
+                ></TextView>
+
+            <TextView
+                android:layout_marginLeft="60dp"
+                android:id="@+id/ck"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sans"
+                android:textSize="18dp"
+                android:textColor="#fff"
+                ></TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/save"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="Save"
+            android:textColor="#fff"
+            android:textAllCaps="false"></Button>
+        <Button
+            android:id="@+id/rest"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="Reset"
+            android:textAllCaps="false"
+            android:textColor="#fff"></Button>
+    </LinearLayout>
+</LinearLayout>
